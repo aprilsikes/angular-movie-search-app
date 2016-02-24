@@ -16,10 +16,14 @@
       <input type="text" ng-model='movieTitle' placeholder="movie title e.g. 'Die Hard'">
       <br>
       <br>
-      <button type="button" class="btn btn-primary btn-md">
+      <button type="button" class="btn btn-primary btn-md" ng-click='getMovies(movieTitle)'>
         Search!  <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
       </button>
     </div>
+
+    <div>{{movieData}}</div>
+
+    <div ng-view></div>
 
 
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
