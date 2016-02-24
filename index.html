@@ -3,10 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Movie Search App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </head>
   <body ng-controller="MainController">
 
-    {{1 + 2}}
+    <div class="page-header">
+      <h1>Angular OMDb Api Search</h1>
+      <br>
+      <h3>Enter a movie by title</h3>
+      <input type="text" ng-model='movieTitle' placeholder="movie title e.g. 'Die Hard'">
+      <br>
+      <br>
+      <button type="button" class="btn btn-primary btn-md">
+        Search!  <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+      </button>
+    </div>
+
 
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>
