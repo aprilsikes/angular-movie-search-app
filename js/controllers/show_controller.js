@@ -1,12 +1,13 @@
 app.controller('ShowController', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
 
-  $scope.movie = [];
-
-  $scope.showMovie = function ({{movie.imdbID}}) {
-    $http.get('http://www.omdbapi.com/?i='+$routeParams.id).then(function(data){
-      $scope.movie = data;
-      console.log($scope.movie);
-      return;
-    });
-  }
+  var id = $routeParams.id;
+  console.log(id);
+  $http.get('http://www.omdbapi.com/?i='+id).then(function(data){
+    console.log(data);
+    $scope.movie = data.data;
+    console.log($scope.movie);
+    // return;
+  });
+  // $scope.showMovie = function () {
+  // }
 }])

@@ -16,6 +16,16 @@
   border-radius: 2px;
 }
 
+img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+#movie {
+  display: flex;
+  flex-direction: row;
+}
+
 a {
   text-decoration: none;
 }
@@ -28,4 +38,8 @@ a {
   /*display: flex;
   flex-direction:*/
   /*margin: 15px;*/
+}
+
+p {
+  color: #777777;
 }
