@@ -2,8 +2,8 @@ var app = angular.module('april', ['ngRoute']);
 
 app.config(function($routeProvider) {
     $routeProvider
-      .when('/searchResults', {
-        templateUrl: 'index.html',
+      .when('/:movieSearch', {
+        templateUrl: 'partials/show_all.html',
         controller: 'MainController'
       })
       .when('/:id/show', {
