@@ -6,8 +6,5 @@ app.controller('ShowController', ['$scope', '$http', '$routeParams', function ($
     console.log(data);
     $scope.movie = data.data;
     console.log($scope.movie);
-    // return;
   });
-  // $scope.showMovie = function () {
-  // }
 }])
